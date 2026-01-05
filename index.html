@@ -86,7 +86,7 @@
       formData.delete("agenda");
       formData.append("agenda", JSON.stringify(agendaArray));
 
-      await fetch("https://YOUR-N8N-DOMAIN/webhook/mom-upload", {
+      await fetch("https://primary-production-49d9.up.railway.app/webhook-test/mom-upload", {
         method: "POST",
         body: formData
       });
@@ -98,3 +98,4 @@
 
 </body>
 </html>
+
